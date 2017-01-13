@@ -133,7 +133,9 @@ angular.module('ui.bootstrap.tabs', [])
       classes: '@?',
       onSelect: '&select', //This callback is called in contentHeadingTransclude
                           //once it inserts the tab's content into the dom
-      onDeselect: '&deselect'
+      onDeselect: '&deselect',
+      icon: '@',
+      badge: '@'
     },
     controller: function() {
       //Empty controller so other directives can require being 'under' a tab
